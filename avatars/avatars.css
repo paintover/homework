@@ -7,11 +7,16 @@ img {
 
 .woman {
   float:left;
+  position: relative;
+  height: 84px;
 }
 
 .man {
   clear: both;
+  height: 84px;
+  position: relative;
 }
+
 
 .circle.no1, .circle.no3, .circle.no6, .circle.no8{
   width : 20px;
@@ -20,10 +25,69 @@ img {
   background-color: #DBDBDB ;
 }
 
+.circle.no1 {
+  position: absolute;
+  top: 55px;
+  left: 53px;
+  border: 1px solid white;
+}
+
+.circle.no2 {
+  position: absolute;
+  top: 55px;
+  left: 143px;
+  border: 1px solid white;
+}
+
+.circle.no3 {
+  position: absolute;
+  top: 55px;
+  left: 232px;
+  border: 1px solid white;
+}
+
+.circle.no4 {
+  position: absolute;
+  top: 55px;
+  left: 323px;
+  border: 1px solid white;
+}
+
+
 .circle.no2, .circle.no4, .circle.no7, .circle.no5{
   width : 20px;
   height: 20px;
   border-radius: 50%;
   background-color: #4CFE88 ;
 }
+
+.circle.no7 {
+  position: absolute;
+  top: 55px;
+  left: 53px;
+  border: 1px solid white;
+}
+
+.circle.no5 {
+  position: absolute;
+  top: 55px;
+  left: 143px;
+  border: 1px solid white;
+}
+
+.circle.no6 {
+  position: absolute;
+  top: 55px;
+  left: 232px;
+  border: 1px solid white;
+}
+
+.circle.no8 {
+  position: absolute;
+  top: 55px;
+  left: 323px;
+  border: 1px solid white;
+}
+
+
 
