@@ -89,5 +89,9 @@ img {
   border: 1px solid white;
 }
 
-
-
+@supports (display: flex){
+  .group {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+}
