@@ -13,11 +13,17 @@ img {
   clear: both;
 }
 
-/* 
-.woman1, .woman2, .woman3, .woman4{
-  float: left;
+.circle.no1, .circle.no3, .circle.no6, .circle.no8{
+  width : 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: #DBDBDB ;
 }
 
-.man1, .man2, .man3, .man4 {
-  clear:both;
-} */
+.circle.no2, .circle.no4, .circle.no7, .circle.no5{
+  width : 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: #4CFE88 ;
+}
+
