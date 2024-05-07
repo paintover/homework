@@ -1,0 +1,88 @@
+body {
+  /* font-family */
+  --size: 64px;
+}
+
+.avatar {
+/* background-color: yellow; */
+inline-size : var(--size);
+block-size: var(--size);
+position: relative;
+margin : 0;
+
+  img {
+  inline-size : inherit;
+  block-size: : inherit;
+  border-radius: 50%;
+  }
+
+  figcaption{
+    --size: 18px;
+
+    inline-size: var(--size);
+    block-size: var(--size);
+    background-color: #DBDBDB;
+    border-radius: 50%;
+    position : absolute;
+    right : 0;
+    bottom : 0;
+  }
+
+  &.is-online figcaption {
+    --size: 18px;
+  
+    inline-size: var(--size, 18px);
+    block-size: var(--size, 18px);
+    background-color: #4CFE88;
+    border-radius: 50%;
+    position : absolute;
+  }
+}
+
+.member {
+  --avatar-size: 64px;
+  --avatar-count: 4;
+  --avatar-spacing: 10px;
+  --container-size : calc((var(--avatar-size) * var(--avatar-count)) + (var(--avatar-spacing) * var(--avatar-count) * 2));
+  border : 1px solid red;
+
+  inline-size: var(--container-size);
+  margin: 50px auto;
+
+
+  ul{
+    list-style-type: none;
+    padding-inline-start: 0;
+    margin: 0;
+    display : flow-root;
+    /* float된 요소를 부모가 포함하게 하려면 부모태그에 display: flow-root; */
+  }
+
+  li{
+    margin: 10px;
+    float: left;
+  }
+}
+
+@supports (display: flex){
+.member{
+
+  li{
+    float: none;
+  }
+
+  ul{
+    display: flex;
+    flex-flow: row wrap;
+  }
+
+  li:nth-child(-n+4){
+    order: 1;
+  }
+
+  /* ul{
+    display: flex;
+    flex-flow: row wrap;
+  } */
+ }
+}
