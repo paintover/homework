@@ -1,0 +1,103 @@
+:root {
+  --container-size: 48rem;
+  --font-size: 1rem;
+  --color: #181818;
+  --logo-width: 14rem;
+  --focus: #24388d;
+  --spacing: 1.25rem;
+}
+
+*,*::before,*::after{
+  box-sizing: border-box;
+}
+
+@media-query(){
+
+}
+
+body {
+  /* width: var(--container-size); */
+  font-size: var(--font-size);
+  color: var(--color);
+}
+
+.logo{
+  --padding-bottom: 3rem;
+  --padding-top: 4rem;
+
+  width: var(--logo-width);
+  margin: auto;
+  padding-top: var(--padding-top);
+  padding-bottom: var(--padding-bottom);
+}
+
+.login-input-form{
+  --gap : 0.5rem;
+
+  width: 100%;
+  display: flex;
+  flex-flow: column nowrap;
+  gap : var(--gap);
+
+  .login-email-form, .login-password-form{
+    display: flex;
+    flex-grow: 1;
+  }
+
+  input{
+    --font-size: 0.875rem;
+    --height: 2.8125rem;
+    --border-color: #dadada;
+    --background-color: #fff;
+    --spacing-left: 1rem; 
+
+    flex-grow: 1;
+    width: 100%;
+    font-size: var(--font-size);
+    height: var(--height);
+    background-color: var(--background-color);
+    border: 0.0625rem solid var(--border-color);
+    padding-left: var(--spacing-left) ;
+  }
+}
+
+fieldset {
+  --padding: 1.25rem;
+  border: 0;
+
+  padding:  0 var(--padding);
+  .login-button{
+    display: flex;
+  }
+
+  button {
+    --size: 1rem;
+    --height: 2.8125rem;
+    --color: #fff;
+    --background-color: #03cf5d;
+    --spacing: 0.625rem;
+    --padding: 0.7rem;
+
+
+    flex-grow: 1;
+    font-size: var(--size);
+    height: var(--height);
+    color: var(--color);
+    background-color: var(--background-color);
+    margin-top: var(--spacing);
+    padding: var(--padding) 0;
+    border: 0;
+  }
+}
+
+.login-state-keep{
+
+}
+
+
+
+
+
+/* @supports(src="/naver/icons/naver_logo.svg"){ 
+ 
+} */

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>네이버 로그인</title>
+  <link href="https://cdn.jsdelivr.net/gh/sun-typeface/SUIT/fonts/variable/woff2/SUIT-Variable.css" rel="stylesheet" />
+  <link rel="stylesheet" href="/naver/naver.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+    crossorigin="anonymous" />
+
+</head>
+
+<body>
+  <header>
+    <h1 class="sr-only"> 네이버 </h1>
+    <div class="logo">
+      <!-- svg 지원 -->
+      <img src="/naver/icons/naver_logo.svg" alt="네이버 로고" class="logo_src" />
+      <!-- png 지원 -->
+      <!-- <img src="/naver/icons/naver_logo.png" alt="네이버 로고" class="logo_png" /> -->
+    </div>
+  </header>
+  <section>
+    <h2 class="sr-only" id="loginForm">로그인</h2>
+    <form action="/" aria-labelledby="loginForm">
+      <fieldset>
+        <legend class="sr-only">로그인 양식</legend>
+        <!-- 아이디 양식 -->
+        <div role="group" class="login-input-form">
+          <div role="group" class="login-email-form">
+            <label for="userEmail" class="sr-only">아이디(이메일)</label>
+            <input type="email" id="userEmail" name="userEmail" required placeholder="아이디(이메일)" />
+          </div>
+          <!-- 비밀번호 양식 -->
+          <div role="group" class="login-password-form">
+            <label for="userPwd" class="sr-only">비밀번호</label>
+            <input type="password" id="userPwd" name="userPwd" required placeholder="비밀번호" />
+          </div>
+        </div>
+        <!-- 로그인 상태유지 양식 -->
+        <div role="group" class="login-state-keep">
+          <input type="checkbox" id="loginKeep" />
+          <label for="loginKeep">로그인 상태유지</label>
+        </div>
+        <!-- 로그인 버튼 양식 -->
+        <span class="login-button"><button type="submit">로그인</button></span>
+      </fieldset>
+    </form>
+
+    <div role="group" class="is-active">
+      <a href="/naver/ip_security.html" target="_blank"><span>IP 보안</span></a>
+      <button type="button" class="ip-state-button">OFF</button>
+    </div>
+  </section>
+</body>
+
+</html>

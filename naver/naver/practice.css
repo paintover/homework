@@ -1,0 +1,50 @@
+/* 체크박스 관련 */
+/* .form-checkbox{
+  position: relative;
+
+  input{
+    position: absolute;
+    appearance: none;
+    width: 12px;
+    height: 12px;
+  }
+
+  label{
+    background: url(/components/images/un-check.svg) no-repeat 0 0 /contain;
+    padding-left: 25px;
+  }
+
+  input:checked + label{
+    background-image: url(/components/images/checked.svg);
+  }
+
+  input:focus{
+    outline: none;
+  }
+  
+  input:focus-visible{
+    outline: 2px solid red;
+  }
+} */
+
+
+/* is-active */
+/* is--active{
+  button{
+    color: yellow;
+    
+    &::after{
+      content: "";
+      background: #000;
+      display: block;
+      height: 1px;
+      block-size: 1px;
+    }
+  }
+
+  ul{
+    display: flex;
+  }
+} */
+
+
