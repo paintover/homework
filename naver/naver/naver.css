@@ -26,7 +26,7 @@ body {
   margin: auto;
   padding-top: var(--padding-top);
   padding-bottom: var(--padding-bottom);
-  
+
 
 }
 
@@ -49,15 +49,24 @@ body {
     --border-color: #dadada;
     --background-color: #fff;
     --spacing-left: 1rem; 
+    --border-size : 0.0625rem;
 
     flex-grow: 1;
     width: 100%;
     font-size: var(--font-size);
     height: var(--height);
     background-color: var(--background-color);
-    border: 0.0625rem solid var(--border-color);
+    border: var(--border-size) solid var(--border-color);
     padding-left: var(--spacing-left) ;
   }
+
+  input:focus {
+    --border-color : #03cf5d;
+    --background-color : #e9f0fd;
+
+    outline : var(--border-size) solid var(--border-color);
+    background-color: var(--background-color);
+  } 
 }
 
 fieldset {
@@ -87,6 +96,7 @@ fieldset {
     margin-top: var(--spacing);
     padding: var(--padding) 0;
     border: 0;
+    outline: none ;
    }
   }
 
@@ -139,11 +149,77 @@ fieldset {
   }
 }
 
+/* 데스크탑 버전(748px 이상) */
+@media (min-width: 748px){
+  body{
+  }
+
+  section{
+    --width: 31.25rem;
+
+    width: var(--width);
+    margin: auto;
+
+    fieldset{
+      position: relative;
+    }
+
+    .ip-security{
+      --color: #181818;
+      --size: 1rem;
+      --right: 1.125rem;
+      --top: 10.3125rem;
+
+      display: flex;
+      float: right;
+      align-items: center;
+      line-height: var(--size);
+      position: absolute;
+      right: var(--right);
+      top: var(--top);
+
+
+      a{
+        text-decoration: none;
+      }
+
+      label{
+        font-size: var(--size);
+      }
+    
+
+      .ip-state-button {
+        --padding-left: 0.5rem;
+
+        border: 0;
+        background-color: transparent;
+        color: var(--color);
+        font-size: var(--size);
+        color: rgb(160, 158, 158);
+        padding: 0;
+        padding-left :var(--padding-left);
+      }
+
+      .ip-state-button:active {
+        color: #03cf5d;
+      }
+    }
+  }
+
+  .login-state-keep{
+    justify-content: flex-start;
+
+    input{
+      align-self: center;
+    }
+
+    input:focus-visible {
+      outline: 2px solid gray;
+
+    }  
+  }
+
+  }
 
 
 
-
-
-/* @supports(src="/naver/icons/naver_logo.svg"){ 
- 
-} */
