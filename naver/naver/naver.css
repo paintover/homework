@@ -64,8 +64,10 @@ body {
 fieldset {
   --padding: 1.25rem;
   border: 0;
-
+  display: flex;
   padding:  0 var(--padding);
+  flex-flow: column nowrap;
+
   .login-button{
     display: flex;
   }
@@ -88,11 +90,45 @@ fieldset {
     padding: var(--padding) 0;
     border: 0;
   }
+
+  .login-state-keep{
+    order: 4;
+    display: flex;
+    /* position: relative; */
+    /* justify-content: flex-end; */
+  }
 }
 
-.login-state-keep{
 
+.login-state-keep {
+  --width: 1.5rem;  
+  --height: 1.5rem;
+  --spacing: 1.5rem;
+  --margin-right: 0.3125rem;
+  --margin-top : 0.625rem;
+
+  margin-top: var(--margin-top);
+  display: flex;
+  justify-content: flex-end;
+  
+  input{
+    position: absolute;
+    appearance: none;
+    width: var(--width);
+    height: var(--height);
+    margin: 0;
+
+  }
+
+  label{
+    background: url(/naver/icons/unchecked.svg) no-repeat 0 0 /contain;
+    margin-right: var(--margin-right);
+    padding-left: var(--spacing);
+    position: relative;
+        /* justify-content: flex-end; */
+  }
 }
+
 
 
 
