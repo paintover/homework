@@ -9,10 +9,7 @@
 
 *,*::before,*::after{
   box-sizing: border-box;
-}
-
-@media-query(){
-
+  margin: 0;
 }
 
 body {
@@ -23,12 +20,14 @@ body {
 
 .logo{
   --padding-bottom: 3rem;
-  --padding-top: 4rem;
+  --padding-top: 6rem;
 
   width: var(--logo-width);
   margin: auto;
   padding-top: var(--padding-top);
   padding-bottom: var(--padding-bottom);
+  
+
 }
 
 .login-input-form{
@@ -70,9 +69,8 @@ fieldset {
 
   .login-button{
     display: flex;
-  }
-
-  button {
+  
+     button {
     --size: 1rem;
     --height: 2.8125rem;
     --color: #fff;
@@ -89,13 +87,17 @@ fieldset {
     margin-top: var(--spacing);
     padding: var(--padding) 0;
     border: 0;
+   }
   }
 
   .login-state-keep{
     order: 4;
     display: flex;
-    /* position: relative; */
-    /* justify-content: flex-end; */
+  }
+
+  .ip-security{
+    order: 5;
+    display: none;
   }
 }
 
@@ -108,8 +110,7 @@ fieldset {
   --margin-top : 0.625rem;
 
   margin-top: var(--margin-top);
-  display: flex;
-  /* justify-content: flex-end; */
+  justify-content: flex-end;
 
   input{
     position: absolute;
@@ -117,15 +118,24 @@ fieldset {
     width: var(--width);
     height: var(--height);
     margin: 0;
-
+    justify-self: start;
+    align-self: center;
   }
 
   label{
     background: url(/naver/icons/unchecked.svg) no-repeat 0 0 /contain;
-    margin-right: var(--margin-right);
+    /* margin-right: var(--margin-right); */
     padding-left: var(--spacing);
     position: relative;
-        /* justify-content: flex-end; */
+    white-space: nowrap; 
+  }
+
+  input:checked + label{
+    background-image: url(/naver/icons/checked.svg);
+  }
+
+  input:focus{
+    outline:none;
   }
 }
 
