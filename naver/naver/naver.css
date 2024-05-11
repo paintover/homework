@@ -202,7 +202,13 @@ fieldset {
 
       .ip-state-button:active {
         color: #03cf5d;
+
+        /* &::after{
+          content: "ON";
+        }  */
       }
+
+      
     }
   }
 
