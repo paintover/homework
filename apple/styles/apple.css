@@ -1,5 +1,60 @@
-@import url(card-component.css);
 @import url(base.css);
 @import url(reset.css);
 @import url(theme.css);
+
+
+/* 카드 컴포넌트 */
+.ad-card{
+  height: var( --size);
+  background-image: image-set(
+    url(/products/ipad_pro.jpeg) 1x,
+    url(/products/ipad_pro_2x.jpeg) 2x
+  );
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 50% 50%;
+  color: var(--white);
+  padding-top: var(--large-spacing);
+
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  gap: var(--small-spacing);
+
+  /* 폰트 사이즈 & 링크 스타일링 */
+  .name{
+    font-size: var(--large-text);
+  }
+  .main-text{
+    font-size: var(--base-text);
+    /* padding-bottom: var(--x-small-spacing); */
+  }
+  .sub-text{
+    font-size: var(--small-text);
+    color: var(--gray);
+  }
+  .link{
+    font-size: var(--xx-small-text);
+    display: flex;
+    flex-flow: row nowrap;
+    gap: var(--base-spacing);
+
+    a{
+      padding: var(--x-small-spacing) var( --small-spacing);
+      border-radius: 61.25rem;
+      text-align: center;
+      background-color: var(--blue-300);
+      border: 0.0625rem solid var(--blue-300);
+
+      &:nth-child(2){
+        background-color: transparent;
+      }
+    }
+  }
+}
+
+
+
 /* 카드 레이아웃 */
+
+
