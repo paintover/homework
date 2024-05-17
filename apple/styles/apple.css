@@ -57,5 +57,13 @@
 
 
 /* 카드 레이아웃 */
+.container{
+  display: grid;
+  gap: 1rem;
 
+  .grid-wrapper{
+    display: grid;
+    gap: 1rem;
+  }
+}
 
