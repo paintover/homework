@@ -5,7 +5,7 @@
 >4. 메인 카드 컴포넌트 css 구성
 >5. 컴포넌트 재사용
 >6. 반응형 디자인 (Large screen 버전)
->7. 접근성 고려
+>7. 과제 구현 결과 (gif 파일)
 <br>
 
 <br>
@@ -78,8 +78,12 @@
 
 ※ ***```iphone 15```~```airpods pro``` 4분할 배치***
 >- 4개의 컴포넌트를 감싼 ```.grid-wrapper```에 ```display:grid```와 ```grid-template-columns:1fr 1fr;```를 주어 컴포넌트들이 4분할로 배치될 수 있도록 하였다. 
+ <br>
 
+<br>
+<br>
 
+# 7. 과제 구현 결과
 
 
 
