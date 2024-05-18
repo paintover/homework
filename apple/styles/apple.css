@@ -3,7 +3,7 @@
 @import url(theme.css);
 
 
-/* 카드 컴포넌트 */
+/* 1. 카드 컴포넌트 */
 .ad-card{
   height: var( --size);
   background-image: image-set(
@@ -15,29 +15,34 @@
   background-position: 50% 50%;
   color: var(--white);
   padding-top: var(--large-spacing);
+  white-space: nowrap;
 
   display: flex;
   flex-flow: column nowrap;
   align-items: center;
   gap: var(--small-spacing);
+  text-align: center;
 
   /* 폰트 사이즈 & 링크 스타일링 */
   .name{
     font-size: var(--large-text);
+    font-weight: 600;
   }
   .main-text{
     font-size: var(--base-text);
-    /* padding-bottom: var(--x-small-spacing); */
+    font-weight: 400;
   }
   .sub-text{
     font-size: var(--small-text);
     color: var(--gray);
+    font-weight: 400;
   }
   .link{
     font-size: var(--xx-small-text);
     display: flex;
     flex-flow: row nowrap;
     gap: var(--base-spacing);
+    font-weight: 400;
 
     a{
       padding: var(--x-small-spacing) var( --small-spacing);
@@ -55,15 +60,133 @@
 }
 
 
-
-/* 카드 레이아웃 */
-.container{
-  display: grid;
-  gap: 1rem;
-
-  .grid-wrapper{
-    display: grid;
-    gap: 1rem;
+/* 상품별 스타일링 (카드 컴포넌트 재사용) */
+.ipad-air{
+  .ad-card{
+    background-image: image-set(
+      url(/products/ipad_air.jpeg) 1x,
+      url(/products/ipad_air_2x.jpeg) 2x
+    );
   }
 }
 
+.iphone-15-pro{
+  .ad-card{
+    background-image: image-set(
+      url(/products/iphone15_pro.jpeg) 1x,
+      url(/products/iphone15_pro_2x.jpeg) 2x
+    );
+  }
+}
+
+.iphone-15{
+  .ad-card{
+    background-image: image-set(
+      url(/products/iphone15.jpeg) 1x,
+      url(/products/iphone15_2x.jpeg) 2x
+    );
+  }
+}
+
+.watch{
+  .ad-card{
+    background-image: image-set(
+      url(/products/apple_watch.jpeg) 1x,
+      url(/products/apple_watch_2x.jpeg) 2x
+    );
+  }
+}
+
+.macbook-air{
+  .ad-card{
+    background-image: image-set(
+      url(/products/macbook_air.jpeg) 1x,
+      url(/products/macbook_air_2x.jpeg) 2x
+    );
+  }
+}
+
+.airpods-pro{
+  .ad-card{
+    background-image: image-set(
+      url(/products/airpods_pro.jpeg) 1x,
+      url(/products/airpods_pro_2x.jpeg) 2x
+    );
+  }
+}
+
+.ad-card-black{
+  color: var(--black);
+
+  .link{
+    a{
+      background-color: var(--black);
+      border: 0.0625rem solid var(--black);
+      color: var(--white);
+  
+      &:nth-child(2){
+        background-color: transparent;
+        color: var(--black);
+      }
+    }
+  }
+}
+
+
+
+/* 2. 카드 레이아웃 */
+.container, .grid-wrapper{
+  display: grid;
+  gap: 1rem;
+}
+
+/* Large screen 버전 (1024px 이상) */
+@media(min-width: 1024px){
+
+  .ad-card{
+    padding-top: var(--extra-large-spacing);
+
+  /* 폰트 사이즈 & 링크 스타일링 */
+  .name{
+    font-size: var(--extra-large-text);
+  }
+  .main-text{
+    font-size: var(--medium-text);
+  }
+  .link{
+    font-size: var(--x-small-text);
+  }
+}
+
+  .grid-wrapper{
+    grid-template-columns: 1fr 1fr;
+    }
+
+  .ipad-pro{
+    .ad-card{
+      background-image: image-set(
+        url(/products/ipad_pro_wide.jpeg) 1x,
+        url(/products/ipad_pro_wide_2x.jpeg) 2x
+      );
+    }
+  }  
+
+  .ipad-air{
+    .ad-card{
+      background-image: image-set(
+        url(/products/ipad_air_wide.jpeg) 1x,
+        url(/products/ipad_air_wide_2x.jpeg) 2x
+      );
+    }
+  }
+
+  .iphone-15-pro{
+    .ad-card{
+      background-image: image-set(
+        url(/products/iphone15_pro_wide.jpeg) 1x,
+        url(/products/iphone15_pro_wide_2x.jpeg) 2x
+      );
+    }
+  }
+
+}
