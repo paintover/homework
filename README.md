@@ -4,6 +4,8 @@
 ## 첫번째 과제
 * avatars.md : https://github.com/paintover/homework/blob/main/avatars/avatars.md
 
-## 두번쨰 과제
+## 두번째 과제
 * naver.md : https://github.com/paintover/homework/blob/main/naver/naver/naver.md
-  
+
+## 세번째 과제
+* apple.md : 
