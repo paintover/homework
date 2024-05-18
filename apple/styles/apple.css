@@ -31,6 +31,8 @@
   .main-text{
     font-size: var(--base-text);
     font-weight: 400;
+    display: flex;
+    flex-flow: column nowrap;
   }
   .sub-text{
     font-size: var(--small-text);
@@ -152,6 +154,8 @@
   }
   .main-text{
     font-size: var(--medium-text);
+    flex-flow: row nowrap;
+    gap: 0.3125rem;
   }
   .link{
     font-size: var(--x-small-text);
