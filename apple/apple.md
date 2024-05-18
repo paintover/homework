@@ -84,9 +84,20 @@
 <br>
 
 # 7. 과제 구현 결과
+※ ***Small Screen 결과***
+![apple_small_screen_result](https://github.com/paintover/homework/assets/109131616/363e7512-2f7c-4e41-852a-a7fe77ab584e)
 
+<br>
+<br>
 
+※ ***Large Screen 결과***
+![apple_large_screen_result](https://github.com/paintover/homework/assets/109131616/129473be-f9c6-4349-836d-cb28f768f594)
 
+<br>
+<br>
+
+※ ***4분할 결과***
+![grid-result](https://github.com/paintover/homework/assets/109131616/29218793-6ca9-4c2d-b9d5-212fd3b1a590)
 
 
 
