@@ -8,4 +8,5 @@
 * naver.md : https://github.com/paintover/homework/blob/main/naver/naver/naver.md
 
 ## 세번째 과제
-* apple.md : 
+* apple.md : https://github.com/paintover/homework/blob/main/apple/apple.md
+  
